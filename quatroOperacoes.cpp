@@ -27,27 +27,28 @@ float divisao(float g, float h){
 }
 
 int main(){
-	setlocale(LC_ALL, "Portuguese");
+	setlocale(LC_ALL, "Portuguese"); //permite o uso de acentuaÃ§Ã£o e caracteres especiais no printf
+	//Entrada de dados
 	int num1, num2;
-	printf("Informe o primeiro número: ");
+	printf("Informe o primeiro nÃºmero: ");
 	scanf("%d", &num1);
-	printf("Informe o segundo número: ");
+	printf("Informe o segundo nÃºmero: ");
 	scanf("%d", &num2);
-	//contextualização e estética
+	//contextualizaÃ§Ã£o e estÃ©tica
 	system("cls");
-	printf("\n  RESULTADO DAS QUATRO OPERAÇÕES!");
+	printf("\n  RESULTADO DAS QUATRO OPERAÃ‡Ã•ES!");
 	printf("\n=======================================");
-	//adição
+	//adiÃ§Ã£o
 	int aux = adicao(num1,num2);
-	printf("\n O resultado da adição é: %d", aux);
-	//subtração
+	printf("\n O resultado da adiÃ§Ã£o Ã©: %d", aux);
+	//subtraÃ§Ã£o
 	int aux2 = subtracao(num1,num2);
-	printf("\n O resultado da subtração é: %d", aux2);
-	//multiplicação
+	printf("\n O resultado da subtraÃ§Ã£o Ã©: %d", aux2);
+	//multiplicaÃ§Ã£o
 	float aux3 = multiplicacao(num1,num2);
-	printf("\n O resultado da multiplicação é: %.2f", aux3);
-	//divisão
+	printf("\n O resultado da multiplicaÃ§Ã£o Ã©: %.2f", aux3);
+	//divisÃ£o
 	float aux4 = divisao(num1,num2);
-	printf("\n O resultado da divisao é: %.2f", aux4);
+	printf("\n O resultado da divisao Ã©: %.2f", aux4);
 	printf("\n=======================================");
 }
